@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter','Poppins', sans-serif ;
+    background-color: #fbfbfb;
+    color: #111;
+    padding: 16px;
+
+}
+
+header {
+    display: flex;
+    justify-content:center;
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    background: #fbfbfb;
+    z-index: 10;
+}
+
+.nav {
+    display: flex;
+    gap: 18px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #888;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.thanks {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.thanks h1 {
+    font-size: 30px;
+    line-height: 0.9;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    max-width: 300px;
+}
+
+.thanks p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.thanks aside {
+    font-size: 11px bold;
+    line-height: 1.6;
+    color: #aaa;
+}
+
+#myprofil, #roadmap, #project, #portofolio, #aboutme {
+    margin-top: 20px;
+    background: white;
+    border-radius: 24px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#myprofil h2, #roadmap h2, #project h2, #portofolio h2, #aboutme h2 {
+    font-size: 20px;
+    line-height: 1.1;
+}
+
+#myprofil p, #roadmap p, #project p, #portofolio p, #aboutme p {
+    font-size: 14px;
+    color: #888;
+    line-height: 1.5;
+}
+
+#myprofil img, #portofolio img {
+    width: 500%;
+    border-radius: 20px;
+    padding: 16px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.roadmap-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-spacing: 0;
+}
+
+.roadmap-table th {
+    font-size: 14px;
+    text-align: center;
+    padding: 12px;
+    background: #f5f5f5;
+}
+
+.roadmap-table td {
+    font-size: 14px;
+    padding: 12px;
+    border-top: 1px solid #eee;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.project-list a {
+    background: #f5f5f5;
+    color: #999;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    flex-direction: column;
+    gap: 16px;
+    border-top: 1px solid #eee;
+}
+
+.footer-right, .footer-left {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+footer a, footer span {
+    font-size: 12px;
+    color: #999;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+}
+
+body {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 32px;
+}
+
+.thanks {
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.thanks h1 {
+    font-size: 50px;
+    text-align: center;
+    max-width: 500px;
+}
+
+.thanks p {
+    max-width: 350px;
+    font-size: 14px;
+}
+
+.thanks aside {
+    max-width: 350px;
+    font-size: 14px;
+}
+
+#myprofil h2 {
+    font-size: 17px;
+}
+
+#myprofil p {
+    font-size: 14px;
+}
+
+#myprofil .myprofil {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 32px;
+}
+
+#myprofil img {
+    width: 30%;
+}
+
+#portofolio img {
+    width: 30%;
+}
+
+#portofoilio .portofolio-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.project-list {
+    grid-template-columns: repeat(4,1fr);
+}
+
+footer {
+    flex-direction: row;
+    justify-content: space-between;
+}
